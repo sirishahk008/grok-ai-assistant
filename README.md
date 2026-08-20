@@ -89,3 +89,6 @@ Start the CLI application:
 python main.py
 ```
 Type `quit` when you want to exit the application.
+
+Github
+example to update
