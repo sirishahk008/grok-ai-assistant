@@ -84,11 +84,9 @@ GROQ_MODEL=llama-3.1-8b-instant
 ```
 
 ### 4. Run the Application
-Start the CLI application:
-```bash
-python main.py
-```
-Type `quit` when you want to exit the application.
 
-Github
-example to update
+Start the Streamlit application:
+```bash
+streamlit run main.py
+```
+This will launch the web application and open it in your default browser (usually at `http://localhost:8501`).
