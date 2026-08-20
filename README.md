@@ -89,4 +89,4 @@ Start the Streamlit application:
 ```bash
 streamlit run main.py
 ```
-This will launch the web application and open it in your default browser (usually at `http://localhost:8501`).
+This will launch the web application and open it in your default browser (usually at `http://localhost:8501`)..
