@@ -110,3 +110,41 @@ Start the Streamlit application:
 streamlit run main.py
 ```
 This will launch the web application and open it in your default browser (usually at `http://localhost:8501`).
+
+---
+
+## 🌐 Deployment to Streamlit Community Cloud
+
+You can deploy this application for free on [Streamlit Community Cloud](https://streamlit.io/cloud) by following these steps:
+
+1. **Push your changes to GitHub**:
+   Ensure all your latest files (including [`requirements.txt`](file:///c:/Users/sirisha/sirisha/gemin-gork/requirements.txt) and [`main.py`](file:///c:/Users/sirisha/sirisha/gemin-gork/main.py)) are committed and pushed to your GitHub repository:
+   ```bash
+   git add .
+   git commit -m "Prepare for Streamlit Cloud deployment"
+   git push origin main
+   ```
+
+2. **Sign in to Streamlit Community Cloud**:
+   - Go to [share.streamlit.io](https://share.streamlit.io/).
+   - Click **Connect GitHub account** and log in.
+
+3. **Deploy the App**:
+   - Click the **"New app"** button.
+   - Choose your repository: `sirishahk008/grok-ai-assistant`.
+   - Set the Branch to `main`.
+   - Set the Main file path to `main.py`.
+
+4. **Configure Secrets & Environment Variables**:
+   Streamlit Community Cloud does not read local `.env` files for security reasons. Instead:
+   - Click **Advanced settings...** at the bottom of the deployment setup.
+   - In the **Secrets** section, add your environment variables in TOML format:
+     ```toml
+     GROQ_API_KEY = "your_actual_groq_api_key_here"
+     GROQ_MODEL = "qwen/qwen3.6-27b"
+     ```
+   - Click **Save**.
+
+5. **Deploy**:
+   - Click **Deploy!**. Streamlit will set up the container, install libraries from [`requirements.txt`](file:///c:/Users/sirisha/sirisha/gemin-gork/requirements.txt), and launch your app.
+
